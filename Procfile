@@ -1,0 +1,1 @@
+web: gunicorn terra-nova:app --log-file=-
