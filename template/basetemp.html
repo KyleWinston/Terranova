@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+           <title> {%block title%} Overseer {% endblock %} </title>
+           <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+           <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h1 class="title"> Overseer </h1>
+
+                            {% block content %} {% endblock %}
+
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="action form-control" name="act" placeholder="What will you do?">
+                                </div>
+                                <div class="col-sm-2 col-sm-offset-5">
+                                    <button type="submit" name="sub" id="Sbtn">>></button>
+                                </div>
+                            </div>
+                        </form>
+
+                </div>
+                <div class="row scroller">
+                    <div class="col-sm-6 col-sm-offset-3">
+                    <p id='chat'></p>
+                    </div>
+                </div>
+            </div>
+        </body>
+            <script src="/static/jquery.js"></script>
+            <script src="/static/engine.js"></script>
+    </html>
